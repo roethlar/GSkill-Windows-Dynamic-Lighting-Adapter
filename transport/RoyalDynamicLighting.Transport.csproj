@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="WinUHidTransport.cs" />
+    <None Include="native\WinUHid.dll" CopyToOutputDirectory="PreserveNewest" Link="WinUHid.dll" Condition="Exists('native\WinUHid.dll')" />
+  </ItemGroup>
+</Project>

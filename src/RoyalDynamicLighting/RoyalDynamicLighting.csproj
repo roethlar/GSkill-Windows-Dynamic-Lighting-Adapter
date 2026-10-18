@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+    <AssemblyName>RoyalDynamicLighting</AssemblyName>
+    <Description>Standalone Windows Dynamic Lighting adapter for ENE DDR5 RAM through PawnIO.</Description>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../transport/RoyalDynamicLighting.Transport.csproj" />
+    <None Include="../../modules/SmbusPIIX4.bin" Link="modules/SmbusPIIX4.bin" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

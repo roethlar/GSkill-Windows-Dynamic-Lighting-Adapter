@@ -1,0 +1,44 @@
+# Generated builds, installer packages, and diagnostics
+/artifacts/
+**/bin/
+**/obj/
+**/TestResults/
+*.log
+
+# Downloaded SDKs, build tools, upstream checkout, and prerequisites
+/tools/dotnet/
+/tools/dotnet-install.ps1
+/tools/installer/
+/transport/packages/
+/transport/native/
+/transport/driver/
+/third_party/
+/installer/dependencies/*.exe
+/installer/dependencies/*.zip
+
+# Local hardware detection and session-only troubleshooting
+/config.json
+/research/
+/Install-Transport-Logged.ps1
+/Resume-Driver-Install.ps1
+/Remove-Current.ps1
+
+# Private signing material and local environment settings
+*.pfx
+*.p12
+*.key
+.env
+.env.*
+!.env.example
+
+# Per-user editor and operating-system state
+.vs/
+.idea/
+*.user
+*.suo
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini

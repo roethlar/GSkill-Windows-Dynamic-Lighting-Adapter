@@ -1,0 +1,30 @@
+Microsoft Visual C++ v14 Redistributable (x64)
+Bundled file version: 14.51.36247.0
+Copyright Microsoft Corporation. All rights reserved.
+
+The complete official vc_redist.x64.exe is bundled without modification.
+Microsoft's license terms included in that package govern its use.
+
+Microsoft's redistribution documentation permits distribution of Visual C++
+Runtime Redistributable packages by licensed Visual Studio users, subject to
+the applicable Microsoft Software License Terms. Royal Dynamic Lighting was
+built using the installed Microsoft Visual Studio 2022 Build Tools.
+
+Official download and compatibility documentation:
+https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist
+https://aka.ms/vc14/vc_redist.x64.exe
+
+Redistribution rights, installation options, and registry version checks:
+https://learn.microsoft.com/en-us/cpp/windows/redistributing-visual-cpp-files
+
+Microsoft license directory:
+https://visualstudio.microsoft.com/license-terms/
+
+The native driver was built with MSVC 14.44.35207. The installer accepts
+x64 runtime version 14.44.35211.0 or newer and skips a suitable existing
+runtime. Installation uses /install /quiet /norestart. A return code of 3010
+means installation succeeded and Windows needs a restart. The app uninstaller
+leaves this shared runtime installed.
+
+This notice describes packaging and directs the user to Microsoft's terms;
+it does not replace or modify those terms.

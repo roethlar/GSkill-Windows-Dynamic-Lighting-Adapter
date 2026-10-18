@@ -1,0 +1,11 @@
+Royal Dynamic Lighting
+
+Connects this PC's two G.Skill Royal RAM modules to Windows Dynamic Lighting.
+
+Setup installs the RAM lighting adapter and its virtual lighting driver. It installs the included official PawnIO driver and Microsoft Visual C++ runtime if needed. OpenRGB is not used.
+
+The adapter starts with Windows and runs in the background. It is configured for the verified AMD X870E system and two G.Skill F5-6000J2836F48G modules, with eight LEDs per module. Other hardware is not supported by this package.
+
+Installing the virtual lighting driver trusts its dedicated local code-signing certificate in the computer's Trusted Root and Trusted Publishers stores. Removing Royal Dynamic Lighting removes the trust entries this setup added. Shared PawnIO and Microsoft runtime installations are retained.
+
+Choose Install on the next page to apply these changes. Windows will not be restarted automatically.

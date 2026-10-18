@@ -1,0 +1,49 @@
+ROYAL DYNAMIC LIGHTING 0.1.0
+
+INSTALL
+Run RoyalDynamicLighting-Setup-0.1.0-x64.exe and approve its administrator prompt.
+Review the setup information and choose Install. The package works offline and
+installs the included official PawnIO and Microsoft Visual C++ prerequisites if
+needed. It trusts the included local driver certificate and creates an automatic
+startup task. No OpenRGB application or component is used.
+
+SUPPORTED HARDWARE
+This build is configured for the verified ASUS ROG CROSSHAIR X870E DARK HERO with
+two G.Skill F5-6000J2836F48G modules, eight LEDs each. It requires updated Windows 11
+x64. Other motherboard/RAM configurations need independent detection and validation.
+
+USE
+Open Settings > Personalization > Dynamic Lighting. Windows currently names the
+virtual lighting device "HID-compliant device". It represents all 16 RAM LEDs.
+The adapter runs in the background whenever Windows controls lighting.
+
+REMOVE
+Use Settings > Apps > Installed apps > Royal Dynamic Lighting > Uninstall.
+Removal stops the adapter, restores saved RAM lighting where possible, removes
+its startup task and virtual driver, and removes certificate trust added by this
+installer. PawnIO and the Microsoft runtime are shared dependencies and remain
+installed. Hardware configuration and diagnostic logs are retained.
+
+FILES AND LOGS
+Adapter: C:\Program Files\RoyalDynamicLighting
+Installer support: C:\Program Files\RoyalDynamicLighting Setup
+Configuration and logs: C:\ProgramData\RoyalDynamicLighting
+
+RETRY
+If setup reports a restart is required, restart when convenient and run setup
+again to finish verification. It never restarts Windows automatically. Failed
+installations keep diagnostic logs and recovery files. A pre-existing manual
+installation must be removed with its original scripts before using this installer.
+
+VALIDATION LIMITS
+The original running adapter was verified on this PC: Windows enumerates 16 LEDs
+and its color updates reach both RAM controllers through PawnIO. Cold power-on
+initialization remains unverified. This installer has been built and checked
+without running its privileged install or uninstall on a fresh Windows system.
+
+The local driver signing certificate expires October 17, 2027. A newly signed
+package is needed for installations after that date. The installer EXE does not
+have a public Authenticode publisher signature.
+
+Third-party notices and prerequisite provenance are included in licenses and
+dependencies. Source and build instructions are in the RoyalDynamicLighting project.
